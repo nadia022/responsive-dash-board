@@ -33,11 +33,11 @@ class CustomDrawer extends StatelessWidget {
             child: Column(
               children: [
                 Expanded(child: SizedBox()),
-                CustomListtile(
+                InActiveCustomListTile(
                   title: 'Setting system',
                   iconPhath: Assets.assetsImagesSettings,
                 ),
-                CustomListtile(
+                InActiveCustomListTile(
                     title: 'Logout account',
                     iconPhath: Assets.assetsImagesLogout)
               ],
