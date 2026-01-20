@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board_tharwat/models/user_info_model.dart';
 import 'package:responsive_dash_board_tharwat/utils/app_images.dart';
 import 'package:responsive_dash_board_tharwat/view/widgets/custom_listtile.dart';
 
