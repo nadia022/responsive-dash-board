@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board_tharwat/view/widgets/all_expenses_header.dart';
+import 'package:responsive_dash_board_tharwat/view/widgets/all_expenses_items_list_view.dart';
 
 class AllExpensesWidget extends StatelessWidget {
   const AllExpensesWidget({super.key});
@@ -13,6 +14,7 @@ class AllExpensesWidget extends StatelessWidget {
       child: Column(
         children: [
           AllExpensesHeader(),
+          AllExpensesItemsListView(),
         ],
       ),
     );
