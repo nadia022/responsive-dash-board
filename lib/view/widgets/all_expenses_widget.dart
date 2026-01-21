@@ -9,9 +9,13 @@ class AllExpensesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(20),
-      margin: EdgeInsets.only(top: 30),
-      color: Color(0xffFFFFFF),
+      margin: EdgeInsets.only(top: 18),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        color: Color(0xffFFFFFF),
+      ),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           AllExpensesHeader(),
           AllExpensesItemsListView(),

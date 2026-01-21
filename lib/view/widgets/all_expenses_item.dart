@@ -56,11 +56,13 @@ class AllExpensesItem extends StatelessWidget {
           ),
           Text('April 2022',
               style: isActive
-                  ? AppStyles.styleRegular14.copyWith(color: Color(0xffFFFFFF))
+                  ? AppStyles.styleRegular14
+                      .copyWith(color: Color(0xffFFFFFF))
                   : AppStyles.styleRegular14),
           Text(r'$20,129',
               style: isActive
-                  ? AppStyles.styleSemiBold24.copyWith(color: Color(0xffFFFFFF))
+                  ? AppStyles.styleSemiBold24
+                      .copyWith(color: Color(0xffFFFFFF))
                   : AppStyles.styleSemiBold24),
         ],
       ),

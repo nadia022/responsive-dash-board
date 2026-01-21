@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board_tharwat/view/widgets/all_expenses_widget.dart';
 import 'package:responsive_dash_board_tharwat/view/widgets/custom_drawer.dart';
+import 'package:responsive_dash_board_tharwat/view/widgets/quick_invoice_widget.dart';
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
@@ -11,7 +12,20 @@ class DashboardView extends StatelessWidget {
       body: Row(
         children: [
           Expanded(child: CustomDrawer()),
-          Expanded(child: AllExpensesWidget()),
+          Expanded(
+            flex: 2,
+            child: CustomScrollView(
+              slivers: [
+                SliverToBoxAdapter(
+                  child: AllExpensesWidget(),
+                ),
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: QuickInvoiceWidget(),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
